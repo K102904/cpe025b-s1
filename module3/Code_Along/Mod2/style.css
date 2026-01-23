@@ -1,0 +1,44 @@
+p {
+  font-size: 20px;
+  color: green;
+  font-style: oblique;
+}
+h1 {
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: teal;
+  text-align: center;
+}
+strong {
+  font-weight: bold;
+}
+
+img {
+   object-fit: cover;
+   /* Uniformly rounded corners */
+    border-radius: 20px;
+
+    /* Different radii for horizontal and vertical corners */
+    border-radius: 10px 30px;
+
+    /* Define radii for all four corners */
+    border-radius: 5px 15px 10px 20px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5)
+}
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.box1 {
+  background-color: red;
+  z-index: 1;
+}
+
+.box2 {
+  background-color: green;
+  z-index: 2;
+  top: 1rem;
+  left: 1rem;
+}

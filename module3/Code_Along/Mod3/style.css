@@ -1,0 +1,62 @@
+.box {
+  /* Content dimensions */
+  width: 200px;
+  height: 100px;
+/* Padding around content */
+padding: 20px;
+
+/* Border around padding */
+border: 5px solid #333;
+
+/* Margin around border */
+margin: 30px;
+
+/* Additional styles for better visualization */
+background-color: #f4f4f4;
+}
+
+.rounded-box {
+  background-color: lightblue;
+  background-image: url('https://edube.org/uploads/media/default/0001/04/red-flower.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px; /* Adding rounded corners */
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+fieldset {
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Styling for input fields within the fieldset */
+fieldset input {
+    margin-bottom: 10px;
+    /* Other input styles */
+}
+
+.table-container {
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.responsive-table {
+    /* Table styles */
+    min-width: 600px; /* Minimum width of the table */
+}

@@ -1,0 +1,81 @@
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.container {
+    overflow: hidden; /* Clearing floats */
+}
+
+.grid-item {
+    float: left; /* Float items to align side by side */
+    width: 50%; /* 2 columns, hence 50% width */
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+    padding: 10px; /* Optional padding for spacing */
+}
+
+@media screen and (max-width: 600px) {
+    .grid-item {
+        width: 100%; /* Stack items vertically on smaller screens */
+    }
+}.float-left {
+    float: left;
+    margin-right: 10px; /* Space between the image and the text */
+}
+
+.text-image-container img {
+    width: 200px;
+    height: auto;
+}
+
+.text-image-container p {
+    text-align: justify;
+}
+.navbar {
+    background-color: lightblue;
+    overflow: hidden; /* Clear the floats */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    float: left;
+    padding: 10px 15px;
+}
+
+.menu-item:hover {
+    background-color: lightgrey;
+}
+.testimonial-section {
+    overflow: hidden; /* Clear the floats */
+}
+
+.testimonial {
+    float: left;
+    width: 33.333%; /* 3 testimonials per row */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    font-weight: normal;
+    text-align: right;
+    margin-top: 10px;
+}
