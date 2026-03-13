@@ -1,6 +1,5 @@
-// ============================================================
+=
 // TASK 1: Recursive Deep Primitive Summation
-// ============================================================
 function sumDeepStrictNumbers(arr) {
     let sum = 0;
     for (const item of arr) {
@@ -20,10 +19,7 @@ function sumDeepStrictNumbers(arr) {
 const testArray1 = [10, ['5', [true, 5]], null, [undefined, [10, NaN]]];
 console.log(sumDeepStrictNumbers(testArray1)); // Expected: 25
 
-
-// ============================================================
 // TASK 2: Categorized Inventory Valuation
-// ============================================================
 function getInventoryValuation(inventory) {
     const result = {};
     for (const item of inventory) {
@@ -50,9 +46,8 @@ const testInventory = [
 console.log(getInventoryValuation(testInventory)); // Expected: { Tech: 400, Furniture: 400 }
 
 
-// ============================================================
 // TASK 3: Functional Pipeline Composer
-// ============================================================
+
 function composePipeline(fns) {
     // Returns a function that threads an initial value through each fn left-to-right
     return function(initialValue) {
@@ -67,10 +62,7 @@ const half = x => x / 2;
 const pipeline = composePipeline([add2, sqr, half]);
 console.log(pipeline(4)); // Expected: 18  → (4+2)=6 → 6²=36 → 36/2=18
 
-
-// ============================================================
 // TASK 4: Optimized Recursive Exponentiation
-// ============================================================
 const memo = {};
 function power(base, exp) {
     // Handle negative exponents: base^-n = 1 / base^n
@@ -93,9 +85,8 @@ console.log(power(2, 5));  // Expected: 32
 console.log(power(2, -2)); // Expected: 0.25
 
 
-// ============================================================
+
 // TASK 5: Schema Validation Exception Handling
-// ============================================================
 class ValidationError extends Error {
     constructor(fields) {
         super();
@@ -137,10 +128,7 @@ const userSchema = { name: 'string', age: 'number', active: 'boolean' };
 const userData = { name: 'Alice', age: 'thirty', active: 1 };
 console.log(safeValidate(userData, userSchema)); // Expected: "age, active"
 
-
-// ============================================================
 // TASK 6: Case-Insensitive Unique Character
-// ============================================================
 function firstUniqueChar(str) {
     const freqMap = {};
 
