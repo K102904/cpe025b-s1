@@ -1,4 +1,3 @@
-=
 // TASK 1: Recursive Deep Primitive Summation
 function sumDeepStrictNumbers(arr) {
     let sum = 0;
